@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+
+	<bean id="webscript.org.alfresco.sequencer.get" class="org.alfresco.sequencer.SequencerWebscript"
+		parent="webscript">
+		<property name="centralSequencer" ref="centralSequencer"></property>
+	</bean>
+
+	<bean id="centralSequencer" class="org.alfresco.sequencer.CentralSequencerImpl">
+		<property name="attributeService" ref="attributeService" />
+		<property name="nodeService" ref="NodeService" />
+		<property name="transactionService" ref="transactionService" />
+	</bean>
+
+
+</beans>

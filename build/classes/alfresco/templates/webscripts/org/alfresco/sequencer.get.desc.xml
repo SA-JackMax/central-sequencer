@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webscript>
+  <shortname>Central Sequencer Webscript</shortname>
+  <description>Sets the property of the node according to internally managed sequence</description>
+  <url>/sequencer</url>
+  <authentication>user</authentication>
+  <format default="">argument</format>
+  <family>sequencer</family>
+</webscript>
